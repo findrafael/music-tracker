@@ -26,12 +26,30 @@ const HomeScreen = () => {
     loadTodos();
   }, []);
 
+  const getArtistNameById = (artistId) => {
+    switch (artistId) {
+      case '1':
+        return 'Ethel Cain';
+      case '2':
+        return 'Lorde';
+      case '3':
+        return 'Allie X';
+      case '4':
+        return 'Lana del Rey';
+      case '5':
+        return 'iamamiwhoami';
+      default:
+        return 'Desconhecido';
+    }
+  };
+
   const addTodo = async () => {
     if (newTodo.trim() !== '' && selectedArtist !== null) {
       const newTodoItem = {
         id: Date.now(),
         title: newTodo,
         artistId: selectedArtist,
+        artistName: getArtistNameById(selectedArtist),
       };
 
       setTodos([...todos, newTodoItem]);
