@@ -1,6 +1,6 @@
 // screens/HomeScreen.js
 import React, { useState, useEffect } from 'react';
-import { View, TextInput, Button, StyleSheet } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import TodoList from '../components/TodoList';
@@ -80,6 +80,8 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Music Tracker</Text>
+      <Text style={styles.subtitle}>Registre suas músicas favoritas!</Text>
       <TextInput
         style={styles.input}
         placeholder="Digite uma música"
@@ -106,15 +108,37 @@ const HomeScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
+    justifyContent: 'center',
     padding: 20,
+  },
+  title: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    textAlign: 'center',
+    color: '#3498db',
+  },
+  subtitle: {
+    fontSize: 18,
+    color: 'gray',
+    marginBottom: 20,
+    textAlign: 'center',
   },
   input: {
     height: 40,
-    borderColor: 'gray',
+    borderColor: '#3498db',
     borderWidth: 1,
     marginBottom: 10,
     paddingLeft: 10,
+    borderRadius: 5,
+  },
+  picker: {
+    height: 40,
+    marginBottom: 10,
+    borderRadius: 5,
+    borderColor: '#3498db',
+    borderWidth: 1,
   },
 });
 
