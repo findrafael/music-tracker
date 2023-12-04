@@ -5,6 +5,7 @@ import { Picker } from '@react-native-picker/picker';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import TodoList from '../components/TodoList';
 import Summary from '../components/Summary';
+import { styles } from '../styles/HomeScreen_style';
 
 const HomeScreen = () => {
   const [newTodo, setNewTodo] = useState('');
@@ -105,41 +106,5 @@ const HomeScreen = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flexGrow: 1,
-    justifyContent: 'center',
-    padding: 20,
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    marginBottom: 10,
-    textAlign: 'center',
-    color: '#3498db',
-  },
-  subtitle: {
-    fontSize: 18,
-    color: 'gray',
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-  input: {
-    height: 40,
-    borderColor: '#3498db',
-    borderWidth: 1,
-    marginBottom: 10,
-    paddingLeft: 10,
-    borderRadius: 5,
-  },
-  picker: {
-    height: 40,
-    marginBottom: 10,
-    borderRadius: 5,
-    borderColor: '#3498db',
-    borderWidth: 1,
-  },
-});
 
 export default HomeScreen;
