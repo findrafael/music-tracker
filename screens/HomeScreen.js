@@ -100,7 +100,7 @@ const HomeScreen = () => {
         <Picker.Item label="Lana del Rey" value="4" />
         <Picker.Item label="iamamiwhoami" value="5" />
       </Picker>
-      <Button title="Add Todo" onPress={addTodo} />
+      <Button title="CADASTRAR MÚSICA" onPress={addTodo} />
       <TodoList todos={todos} onDelete={deleteTodo} />
       <Summary todos={todos} />
     </View>
