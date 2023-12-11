@@ -5,30 +5,30 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f8f8f8', // Cor de fundo levemente cinza
+    backgroundColor: '#f8f8f8',
   },
   text: {
     fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 20,
-    color: '#3498db', // Cor do título azul
+    color: '#3498db',
   },
   input: {
     height: 40,
-    borderColor: '#3498db', // Cor da borda azul
+    borderColor: '#3498db',
     borderWidth: 1,
     marginBottom: 10,
     paddingLeft: 10,
     width: 200,
-    borderRadius: 5, // Borda arredondada
+    borderRadius: 5,
   },
   button: {
-    backgroundColor: '#3498db', // Cor de fundo do botão azul
+    backgroundColor: '#3498db',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
   },
   buttonText: {
-    color: '#ffffff', // Cor do texto do botão branca
+    color: '#ffffff',
   },
 });

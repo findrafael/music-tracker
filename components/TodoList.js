@@ -1,4 +1,3 @@
-// components/TodoList.js
 import React from 'react';
 import { FlatList } from 'react-native';
 import TodoItem from './TodoItem';

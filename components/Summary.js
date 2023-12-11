@@ -1,4 +1,3 @@
-// components/Summary.js
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { styles } from '../styles/Summary_style';
@@ -36,7 +35,6 @@ const Summary = ({ todos }) => {
 };
 
 const getArtistNameById = (artistId) => {
-  // Implemente a lógica para obter o nome do artista com base no ID
   switch (artistId) {
     case '1':
       return 'Ethel Cain';

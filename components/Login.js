@@ -1,4 +1,3 @@
-// components/Login.js
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
