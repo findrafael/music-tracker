@@ -13,16 +13,11 @@ const navigation = useNavigation();
 
 const login = async () => {
   try {
-    // Construa o objeto de dados para a requisição
-    /*const data = {
-        email: username,
-        password: password,
-    };*/
 
     const data = {
-        "email": "fulano@qa.com",
-        "password": "teste"
-      }
+        email: username,
+        password: password,
+    };
     
     const response = await fetch('https://serverest.dev/login', {
       method: 'POST',
