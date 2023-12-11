@@ -29,21 +29,20 @@ const login = async () => {
     });
 
     if (response.status === 200) {
-      console.log('Login realizado com sucesso!');
       alert('Login realizado com sucesso!');
       navigation.navigate('Home');
     } else {
-      console.error('Falha no login. Credenciais inválidas.');
+      alert('Falha no login. Credenciais inválidas.');
     }
   } catch (error) {
-    console.log('Erro durante o login:', error.message);
+    alert('Erro durante o login:', error.message);
   }
 };
 
 
   return (
     <View style={styles.container}>
-      <Text>Login</Text>
+      <Text style={styles.text}>Login</Text>
       <TextInput
         placeholder="Usuário"
         value={username}
