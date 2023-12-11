@@ -1,7 +1,8 @@
 // components/Login.js
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import { View, Text, TextInput, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { styles } from '../styles/Login_style';
 
 
 const Login = ({ onLogin }) => {
@@ -60,21 +61,5 @@ const login = async () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  input: {
-    height: 40,
-    borderColor: 'gray',
-    borderWidth: 1,
-    marginBottom: 10,
-    paddingLeft: 10,
-    width: 200,
-  },
-});
 
 export default Login;
